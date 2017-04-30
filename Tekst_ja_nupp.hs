@@ -18,7 +18,7 @@ gui = do
         networkDescription = do
 
             tekst <- behaviorText input ""
-            but2 <- event0 but command
+            but2  <- event0 but command
 
             (kaitumine :: Behavior String) 
                 <- stepper "" (tekst <@ but2)
