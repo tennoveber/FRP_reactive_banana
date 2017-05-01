@@ -52,3 +52,9 @@ gui =
 
 main :: IO ()
 main = start gui
+
+do putStrLn "a"
+   putStrLn "b"
+   
+do x <- getLine
+   putStrLn x
