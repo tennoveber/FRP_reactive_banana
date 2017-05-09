@@ -5,8 +5,7 @@ import Reactive.Banana
 import Reactive.Banana.WX
 
 gui :: IO ()
-gui = 
-    do
+gui = do
     f          <- frame [text := "Nupuvajutus"]
     nupp       <- button f [text := "+1"]
     valjund    <- staticText f []
