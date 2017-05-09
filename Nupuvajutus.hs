@@ -7,8 +7,8 @@ import Reactive.Banana.WX
 gui :: IO ()
 gui = 
     do
-    f         <- frame [text := "Nupuvajutus"]
-    nupp    <- button f [text := "+1"]
+    f          <- frame [text := "Nupuvajutus"]
+    nupp       <- button f [text := "+1"]
     valjund    <- staticText f []
     valjund2   <- staticText f []
     set f [layout := minsize (sz 350 40) $ margin 10 $ row 10 [widget nupp
