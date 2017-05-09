@@ -20,10 +20,10 @@ gui = do
             tekst <- behaviorText input ""
             but2  <- event0 but command
 
-            (kaitumine :: Behavior String) 
+            (behavior :: Behavior String) 
                 <- stepper "" (tekst <@ but2)
 
-            sink output [text :== kaitumine]   
+            sink output [text :== behavior]   
 
     network <- compile networkDescription    
     actuate network
