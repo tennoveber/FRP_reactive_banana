@@ -5,8 +5,7 @@ import Reactive.Banana
 import Reactive.Banana.WX
 
 gui :: IO ()
-gui = 
-    do
+gui = do
     f         <- frame [text := "Kahe arvu liitmine"]
     input1    <- entry f []
     input2    <- entry f []
