@@ -20,9 +20,9 @@ gui = do
 
             let
                 behavior2 :: Behavior String
-                behavior2 = f <$> behavior1
+                behavior2 = func <$> behavior1
                     where
-                    f x = if even x then "Tegemist on paarisarvuga" 
+                    func x = if even x then "Tegemist on paarisarvuga" 
                           else "Tegemist on paaritu arvuga"
             sink valjund [text :==  show <$> behavior1 ]
             sink valjund2 [text :==  show <$> behavior2 ]
